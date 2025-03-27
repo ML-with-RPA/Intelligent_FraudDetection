@@ -1,149 +1,152 @@
-# 🏦 Automacao Inteligente na Detecao de Fraudes 🚀  
+# 🏦 Intelligent Automation in Fraud Detection 🚀  
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Sistema integrado de Machine Learning e RPA para deteccao de fraudes financeiras em tempo real com notificacao automatica.
+An integrated Machine Learning and RPA system for real-time financial fraud detection with automatic notification.
 
-## 📌 Objetivo  
-Desenvolver uma solucao automatizada que:
-1. Analisa transacoes financeiras usando modelos de ML
-2. Detecta padroes suspeitos com alta precisao
-3. Executa acoes corretivas via RPA
-4. Envia alertas automaticos por e-mail
+## 📌 Objective  
+Develop an automated solution that:
+1. Analyzes financial transactions using ML models
+2. Detects suspicious patterns with high accuracy
+3. Executes corrective actions via RPA
+4. Sends automatic alerts via email
 
-## 🛠 Tecnologias Utilizadas  
-| Categoria          | Ferramentas                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| Linguagem          | Python 3.9+                                                                 |
-| ML                 | Scikit-learn, XGBoost, Random Forest, SMOTE                                 |
-| Analise de Dados   | Pandas, NumPy                                                               |
-| Visualizacao       | Matplotlib, Seaborn, Plotly                                                 |
-| Automacao          | win32com (Outlook), SMTP                                                    |
-| Estatistica        | Statsmodels (McNemar), SciPy                                                |
+## 🛠 Technologies Used  
+| Category          | Tools                                                                 |
+|--------------------|-------------------------------------------------------------------------|
+| Language          | Python 3.9+                                                             |
+| ML                 | Scikit-learn, XGBoost, Random Forest, SMOTE                           |
+| Data Analysis   | Pandas, NumPy                                                           |
+| Visualization       | Matplotlib, Seaborn, Plotly                                         |
+| Automation          | win32com (Outlook), SMTP                                           |
+| Statistics        | Statsmodels (McNemar), SciPy                                         |
 
-## 📂 Estrutura do Projeto  
+## 📂 Project Structure  
 
 ```bash
-📂 automacao-fraudes
+📂 fraud-automation
  ┣ 📂 data
- ┃ ┣ 📂 raw                   # Dados brutos (nao versionado)
- ┃ ┗ 📂 processed             # Dados pre-processados
+ ┃ ┣ 📂 raw                   # Raw data (not versioned)
+ ┃ ┗ 📂 processed             # Pre-processed data
  ┣ 📂 experiments
- ┃ ┣ 📜 train.py              # Treinamento (Credit Card)
- ┃ ┣ 📜 train_ieee.py         # Treinamento (IEEE)
- ┃ ┗ 📜 evaluate.py           # Avaliacao de modelos
+ ┃ ┣ 📜 train.py              # Training (Credit Card)
+ ┃ ┣ 📜 train_ieee.py         # Training (IEEE)
+ ┃ ┗ 📜 evaluate.py           # Model evaluation
  ┣ 📂 results
- ┃ ┣ 📂 logs                  # Logs de execucao
- ┃ ┣ 📂 plots                 # Graficos (ROC, matriz confusao)
- ┃ ┗ 📂 saved_models          # Modelos treinados (.pkl)
- ┣ 📜 main.py                 # Pipeline principal
- ┣ 📜 preprocessing.py        # Pre-processamento
- ┣ 📜 eda.py                  # Analise exploratoria
- ┣ 📜 modelo_ml.py            # Definicao dos modelos
- ┣ 📜 envioEmail.py           # Automacao de e-mails
- ┣ 📜 requirements.txt        # Dependencias
- ┗ 📜 README.md               # Este arquivo
+ ┃ ┣ 📂 logs                  # Execution logs
+ ┃ ┣ 📂 plots                 # Graphs (ROC, confusion matrix)
+ ┃ ┗ 📂 saved_models          # Trained models (.pkl)
+ ┣ 📜 main.py                 # Main pipeline
+ ┣ 📜 preprocessing.py        # Pre-processing
+ ┣ 📜 eda.py                  # Exploratory data analysis
+ ┣ 📜 ml_model.py             # Model definitions
+ ┣ 📜 email_sending.py        # Email automation
+ ┣ 📜 requirements.txt        # Dependencies
+ ┗ 📜 README.md               # This file
 ```
 
-## ⚙️ Configuracao e Execucao  
-### Pre-requisitos  
+## ⚙️ Setup and Execution
+
+### Prerequisites
 - Python 3.9+
-- Conta no Kaggle para download dos datasets
+- Kaggle account to download datasets
 
-### Instalacao  
+### Installation
 ```bash
-# Clone o repositorio
-git clone https://github.com/seu-usuario/automacao-fraudes.git
-cd automacao-fraudes
+# Clone the repository
+git clone https://github.com/your-user/fraud-automation.git
+cd fraud-automation
 
-# Instale as dependencias
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### Download dos Dados  
+### Data Download
 **IEEE CIS Fraud Dataset:**
-- Disponivel em: Kaggle
-- Arquivos necessarios: train_transaction.csv, test_transaction.csv
-- Salvar em: `data/raw/ieee/`
+- Available on: Kaggle
+- Required files: train_transaction.csv, test_transaction.csv
+- Save in: `data/raw/ieee/`
 
 **Credit Card Fraud Dataset:**
-- Disponivel em: Kaggle
-- Arquivo: `creditcard.csv`
-- Salvar em: `data/raw/creditcard/`
+- Available on: Kaggle
+- File: creditcard.csv
+- Save in: `data/raw/creditcard/`
 
-### Execucao  
+### Execution
 ```bash
-# Pipeline completo (pre-processamento + treino + avaliacao)
+# Complete pipeline (pre-processing + training + evaluation)
 python main.py
 
-# Treinar modelos especificos
+# Train specific models
 python experiments/train.py --base creditcard --model xgb
 python experiments/train_ieee.py --model rf
 ```
 
-## 📊 Métricas e Estatísticas  
-### Comparacao de Modelos  
-| Modelo        | Acuracia | Precisao | Recall | F1-Score | AUC  |
-|--------------|---------|---------|--------|---------|------|
-| XGBoost     | 0.998   | 0.952   | 0.821  | 0.881   | 0.983|
-| Random Forest | 0.996   | 0.912   | 0.784  | 0.843   | 0.962|
+## 📊 Metrics and Statistics
 
-### Teste de McNemar  
+### Model Comparison
+| Model          | Accuracy | Precision | Recall | F1-Score | AUC  |
+|---------------|----------|------------|--------|------------|------|
+| XGBoost      | 0.998    | 0.952      | 0.821  | 0.881      | 0.983|
+| Random Forest | 0.996    | 0.912      | 0.784  | 0.843      | 0.962|
+
+### McNemar Test
 ```python
-# Resultado:
-- Estatistica χ²: 4.92
-- p-valor: 0.027 (p < 0.05 → diferenca significativa)
+# Result:
+- Statistic χ²: 4.92
+- p-value: 0.027 (p < 0.05 → significant difference)
 ```
 
-### Graficos Gerados  
-- **Matriz de Confusao**  
-- **Curva ROC**  
-- **Distribuicao de Features**  
+### Generated Graphs
+- **Confusion Matrix**
+- **ROC Curve**
+- **Feature Distribution**
 
-## 📈 Resultados  
-✅ Reducao de **15%** em falsos negativos vs abordagem manual  
-✅ Economia de **40%** no tempo de analise via automacao RPA  
-✅ Precisao de **95.2%** na deteccao de fraudes (XGBoost)  
+## 📈 Results
+- 15% reduction in false negatives vs manual approach
+- 40% time savings in analysis via RPA automation
+- 95.2% accuracy in fraud detection (XGBoost)
 
-## 📧 Notificacao Automatica  
-### Exemplo de e-mail gerado:  
+## 📧 Automatic Notification
+### Example of generated email:
+```plaintext
+Subject: [ALERT] Fraud Detected - AntiFraud System
+
+Body:
+Three suspicious transactions were identified:
+- ID: 12345 | Amount: R$ 2,450.00
+- ID: 67890 | Amount: R$ 3,780.50
+
+Attachments:
+- fraud_report.xlsx
+- analysis_graphs.zip
 ```
-Assunto: [ALERTA] Fraude Detectada - Sistema AntiFraude
 
-Corpo:
-Foram identificadas 3 transacoes suspeitas:
-- ID: 12345 | Valor: R$ 2.450,00
-- ID: 67890 | Valor: R$ 3.780,50
+## 📚 References
+- Chen, T. (2016). XGBoost: A Scalable Tree Boosting System
+- Chawla, N.V. (2002). SMOTE: Synthetic Minority Over-sampling Technique
+- Gartner (2021). Market Guide for RPA
 
-Anexos:
-- relatorio_fraudes.xlsx
-- graficos_analise.zip
-```
+## 🔮 Next Steps
+- Integration with banking APIs
+- Real-time dashboard
+- Deep Learning models
 
-## 📚 Referencias  
-- Chen, T. (2016). XGBoost: A Scalable Tree Boosting System  
-- Chawla, N.V. (2002). SMOTE: Synthetic Minority Over-sampling Technique  
-- Gartner (2021). Market Guide for RPA  
+## 🤝 Contribution
+Contributions are welcome! Follow these steps:
 
-## 🔮 Proximos Passos  
-✅ Integracao com APIs bancarias  
-✅ Dashboard em tempo real  
-✅ Modelos de Deep Learning  
+1. Fork the project
+2. Create your branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
 
-## 🤝 Contribuicao  
-Contribuicoes sao bem-vindas! Siga os passos:  
-1. **Fork** o projeto  
-2. Crie sua branch (`git checkout -b feature/nova-feature`)  
-3. Commit suas mudancas (`git commit -m 'Adiciona nova feature'`)  
-4. Push para a branch (`git push origin feature/nova-feature`)  
-5. Abra um **Pull Request**  
+## 📄 License
+Distributed under the MIT license. See LICENSE for more information.
 
-## 📄 Licenca  
-Distribuido sob licenca **MIT**. Veja `LICENSE` para mais informacoes.  
+Developed with ❤️ by [Guilherme de Almeida Pereira](https://www.linkedin.com/in/guilhermedealmeidapereira/) | LinkedIn
 
----  
 
-Desenvolvido com ❤️ por [Guilherme de Almeida Pereira](https://www.linkedin.com/in/guilhermedealmeidapereira/)  
 
 
