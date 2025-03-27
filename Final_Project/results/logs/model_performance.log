@@ -1,0 +1,963 @@
+
+==============================
+Data/Hora: 2025-03-22 14:46:26
+Modelo: Random Forest
+Acurácia: 0.9995
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     85295
+           1       0.96      0.76      0.85       148
+
+    accuracy                           1.00     85443
+   macro avg       0.98      0.88      0.92     85443
+weighted avg       1.00      1.00      1.00     85443
+
+📌 Matriz de Confusão:
+[[85290     5]
+ [   36   112]]
+==============================
+
+==============================
+Data/Hora: 2025-03-22 15:49:48
+Modelo: Random Forest
+Acurácia: 0.9995
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     85295
+           1       0.96      0.76      0.85       148
+
+    accuracy                           1.00     85443
+   macro avg       0.98      0.88      0.92     85443
+weighted avg       1.00      1.00      1.00     85443
+
+📌 Matriz de Confusão:
+85290	5
+36	112
+==============================
+
+==============================
+Data/Hora: 2025-03-22 18:51:34
+Modelo: Random Forest (IEEE)
+Acurácia: 0.9867
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       296
+           1       0.00      0.00      0.00         4
+
+    accuracy                           0.99       300
+   macro avg       0.49      0.50      0.50       300
+weighted avg       0.97      0.99      0.98       300
+
+📌 Matriz de Confusão:
+296	0
+4	0
+==============================
+
+==============================
+Data/Hora: 2025-03-23 00:33:03
+Modelo: Random Forest (IEEE SMOTE)
+Acurácia: 1.0000
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_treinamento_smote.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00       500
+         1.0       1.00      1.00      1.00       500
+
+    accuracy                           1.00      1000
+   macro avg       1.00      1.00      1.00      1000
+weighted avg       1.00      1.00      1.00      1000
+
+📌 Matriz de Confusão:
+500	0
+0	500
+==============================
+
+==============================
+Data/Hora: 2025-03-23 01:34:00
+Modelo: Random Forest (IEEE SMOTE Treino)
+Acurácia: 0.8040
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+         0.0       0.78      0.85      0.81      2500
+         1.0       0.83      0.76      0.79      2500
+
+    accuracy                           0.80      5000
+   macro avg       0.81      0.80      0.80      5000
+weighted avg       0.81      0.80      0.80      5000
+
+📌 Matriz de Confusão:
+2121	379
+601	1899
+==============================
+
+==============================
+Data/Hora: 2025-03-23 02:20:52
+Modelo: XGBoost (IEEE SMOTE Treino)
+Acurácia: 0.7120
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+         0.0       0.68      0.80      0.74       500
+         1.0       0.76      0.62      0.68       500
+
+    accuracy                           0.71      1000
+   macro avg       0.72      0.71      0.71      1000
+weighted avg       0.72      0.71      0.71      1000
+
+📌 Matriz de Confusão:
+[[400 100]
+ [188 312]]
+==============================
+
+==============================
+Data/Hora: 2025-03-23 02:28:46
+Modelo: XGBoost (IEEE SMOTE Treino)
+Acurácia: 0.7120
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+         0.0       0.68      0.80      0.74       500
+         1.0       0.76      0.62      0.68       500
+
+    accuracy                           0.71      1000
+   macro avg       0.72      0.71      0.71      1000
+weighted avg       0.72      0.71      0.71      1000
+
+📌 Matriz de Confusão:
+[[400 100]
+ [188 312]]
+==============================
+
+==============================
+Data/Hora: 2025-03-23 02:40:37
+Modelo: XGBoost (IEEE SMOTE Treino)
+Acurácia: 0.7740
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+         0.0       0.74      0.86      0.79      2500
+         1.0       0.83      0.69      0.75      2500
+
+    accuracy                           0.77      5000
+   macro avg       0.78      0.77      0.77      5000
+weighted avg       0.78      0.77      0.77      5000
+
+📌 Matriz de Confusão:
+[[2141  359]
+ [ 771 1729]]
+==============================
+
+==============================
+Data/Hora: 2025-03-23 03:09:42
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-23 03:12:23
+Modelo: Random Forest (Creditcard SMOTE Treino)
+Acurácia: 0.9887
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      2500
+           1       0.96      0.83      0.89       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.91      0.94      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+2495	5
+25	123
+==============================
+
+==============================
+Data/Hora: 2025-03-23 04:06:29
+Modelo: XGBoost (Ieee SMOTE Treino)
+Acurácia: 0.7740
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme\data\processed\dados_ieee_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+         0.0       0.74      0.86      0.79      2500
+         1.0       0.83      0.69      0.75      2500
+
+    accuracy                           0.77      5000
+   macro avg       0.78      0.77      0.77      5000
+weighted avg       0.78      0.77      0.77      5000
+
+📌 Matriz de Confusão:
+[[2141  359]
+ [ 771 1729]]
+==============================
+
+==============================
+Data/Hora: 2025-03-24 17:17:52
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-24 17:19:14
+Modelo: Random Forest (Creditcard SMOTE Treino)
+Acurácia: 0.9887
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      2500
+           1       0.96      0.83      0.89       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.91      0.94      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+2495	5
+25	123
+==============================
+
+==============================
+Data/Hora: 2025-03-24 22:31:05
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-24 23:29:20
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-24 23:32:11
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-25 00:01:53
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-25 14:59:11
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-25 18:12:14
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-25 18:51:18
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-26 13:31:50
+Modelo: Random Forest (Creditcard SMOTE Treino)
+Acurácia: 0.9887
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      2500
+           1       0.96      0.83      0.89       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.91      0.94      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+2495	5
+25	123
+==============================
+
+==============================
+Data/Hora: 2025-03-26 13:40:44
+Modelo: Random Forest (Creditcard SMOTE Treino)
+Acurácia: 0.9887
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      2500
+           1       0.96      0.83      0.89       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.91      0.94      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+2495	5
+25	123
+==============================
+
+==============================
+Data/Hora: 2025-03-26 13:47:28
+Modelo: Random Forest (Creditcard SMOTE Treino)
+Acurácia: 0.9887
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      2500
+           1       0.96      0.83      0.89       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.91      0.94      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+2495	5
+25	123
+==============================
+
+==============================
+Data/Hora: 2025-03-26 14:12:28
+Modelo: Random Forest (Ieee SMOTE Treino)
+Acurácia: 0.8040
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_ieee_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_ieee_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+         0.0       0.78      0.85      0.81      2500
+         1.0       0.83      0.76      0.79      2500
+
+    accuracy                           0.80      5000
+   macro avg       0.81      0.80      0.80      5000
+weighted avg       0.81      0.80      0.80      5000
+
+📌 Matriz de Confusão:
+2121	379
+601	1899
+==============================
+
+==============================
+Data/Hora: 2025-03-26 14:34:17
+Modelo: XGBoost (Ieee SMOTE Treino)
+Acurácia: 0.7740
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_ieee_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_ieee_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+         0.0       0.74      0.86      0.79      2500
+         1.0       0.83      0.69      0.75      2500
+
+    accuracy                           0.77      5000
+   macro avg       0.78      0.77      0.77      5000
+weighted avg       0.78      0.77      0.77      5000
+
+📌 Matriz de Confusão:
+[[2141  359]
+ [ 771 1729]]
+==============================
+
+==============================
+Data/Hora: 2025-03-26 14:38:17
+Modelo: XGBoost (Creditcard SMOTE Treino)
+Acurácia: 0.9906
+📂 Base de Dados Utilizada:
+   - Treinamento: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+   - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_teste_completo.csv
+📊 Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      2500
+           1       0.96      0.86      0.91       148
+
+    accuracy                           0.99      2648
+   macro avg       0.98      0.93      0.95      2648
+weighted avg       0.99      0.99      0.99      2648
+
+📌 Matriz de Confusão:
+[[2495    5]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-26 15:52:44
+Modelo: XGBoost (CREDITCARD)
+Acur�cia: 0.9851
+Base de Dados:
+  - Treino: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+  - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\amostra_teste_creditcard.csv
+Relat�rio:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      1324
+           1       0.98      0.86      0.92       148
+
+    accuracy                           0.99      1472
+   macro avg       0.98      0.93      0.96      1472
+weighted avg       0.99      0.99      0.98      1472
+
+Matriz Confus�o:
+[[1322    2]
+ [  20  128]]
+==============================
+
+==============================
+Data/Hora: 2025-03-26 15:53:18
+Modelo: Random Forest (CREDITCARD)
+Acur�cia: 0.9810
+Base de Dados:
+  - Treino: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\dados_treinamento_completo.csv
+  - Teste: C:\Users\Guilherme\Desktop\TCC - Guilherme - Copia\data\processed\amostra_teste_creditcard.csv
+Relat�rio:
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99      1324
+           1       0.98      0.83      0.90       148
+
+    accuracy                           0.98      1472
+   macro avg       0.98      0.91      0.94      1472
+weighted avg       0.98      0.98      0.98      1472
+
+Matriz Confus�o:
+1321	3
+25	123
+==============================
+
+========================================
+Data: 2025-03-26 17:59:40
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9803
+Relat�rio:
+              precision    recall  f1-score   support
+
+         0.0       0.99      0.99      0.99      1324
+         1.0       0.93      0.86      0.90       148
+
+    accuracy                           0.98      1472
+   macro avg       0.96      0.93      0.94      1472
+weighted avg       0.98      0.98      0.98      1472
+
+Matriz de Confus�o:
+[[1315    9]
+ [  20  128]]
+========================================
+
+========================================
+Data: 2025-03-26 18:01:29
+Base: creditcard | Modelo: rf
+Acur�cia: 0.9803
+Relat�rio:
+              precision    recall  f1-score   support
+
+         0.0       0.98      1.00      0.99      1324
+         1.0       0.95      0.84      0.90       148
+
+    accuracy                           0.98      1472
+   macro avg       0.97      0.92      0.94      1472
+weighted avg       0.98      0.98      0.98      1472
+
+Matriz de Confus�o:
+[[1318    6]
+ [  23  125]]
+========================================
+
+========================================
+Data: 2025-03-26 18:16:37
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9991
+Relat�rio:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     85295
+           1       0.72      0.80      0.75       148
+
+    accuracy                           1.00     85443
+   macro avg       0.86      0.90      0.88     85443
+weighted avg       1.00      1.00      1.00     85443
+
+Matriz de Confus�o:
+[[85248    47]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 18:24:49
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9991
+Relat�rio:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     85295
+           1       0.72      0.80      0.75       148
+
+    accuracy                           1.00     85443
+   macro avg       0.86      0.90      0.88     85443
+weighted avg       1.00      1.00      1.00     85443
+
+Matriz de Confus�o:
+[[85248    47]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 18:42:36
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9991
+Precision: 0.7152
+Recall: 0.7973
+Matriz de Confus�o:
+[[85248    47]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 19:02:09
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9991
+Precision: 0.7152
+Recall: 0.7973
+Matriz de Confus�o:
+[[85248    47]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 19:09:02
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9991
+Precision: 0.7152
+Recall: 0.7973
+Matriz de Confus�o:
+[[85248    47]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 19:49:53
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9991
+Precision: 0.7152
+Recall: 0.7973
+Matriz de Confus�o:
+[[85248    47]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 19:57:50
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9991
+Precision: 0.7152
+Recall: 0.7973
+Matriz de Confus�o:
+[[85248    47]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 20:01:05
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9991
+Precision: 0.7152
+Recall: 0.7973
+Matriz de Confus�o:
+[[85248    47]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 20:06:37
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9991
+Precision: 0.7152
+Recall: 0.7973
+Matriz de Confus�o:
+[[85248    47]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 20:23:16
+Base: creditcard | Modelo: rf
+Acur�cia: 0.9991
+Precision: 0.7195
+Recall: 0.7973
+Matriz de Confus�o:
+[[85249    46]
+ [   30   118]]
+========================================
+
+========================================
+Data: 2025-03-26 20:43:54
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9817
+Precision: 0.9481
+Recall: 0.8649
+Matriz de Confus�o:
+[[1317    7]
+ [  20  128]]
+========================================
+
+========================================
+Data: 2025-03-26 20:44:24
+Base: creditcard | Modelo: rf
+Acur�cia: 0.9803
+Precision: 0.9542
+Recall: 0.8446
+Matriz de Confus�o:
+[[1318    6]
+ [  23  125]]
+========================================
+
+========================================
+Data: 2025-03-26 20:51:12
+Base: creditcard | Modelo: rf
+Acur�cia: 0.9803
+Precision: 0.9542
+Recall: 0.8446
+Matriz de Confus�o:
+[[1318    6]
+ [  23  125]]
+========================================
+
+========================================
+Data: 2025-03-26 21:31:13
+Base: ieee | Modelo: xgb
+Acur�cia: 0.8475
+Precision: 0.8047
+Recall: 0.6961
+Matriz de Confus�o:
+[[1246  109]
+ [ 196  449]]
+========================================
+
+========================================
+Data: 2025-03-26 21:32:51
+Base: ieee | Modelo: rf
+Acur�cia: 0.8265
+Precision: 0.7492
+Recall: 0.6946
+Matriz de Confus�o:
+[[1205  150]
+ [ 197  448]]
+========================================
+
+========================================
+Data: 2025-03-26 22:08:16
+Base: ieee | Modelo: rf
+Acur�cia: 0.8265
+Precision: 0.7492
+Recall: 0.6946
+Matriz de Confus�o:
+[[1205  150]
+ [ 197  448]]
+========================================
+
+========================================
+Data: 2025-03-26 22:48:03
+Base: ieee | Modelo: rf
+Acur�cia: 0.8265
+Precision: 0.7492
+Recall: 0.6946
+Matriz de Confus�o:
+[[1205  150]
+ [ 197  448]]
+========================================
+
+========================================
+Data: 2025-03-26 23:16:03
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9817
+Precision: 0.9481
+Recall: 0.8649
+Matriz de Confus�o:
+[[1317    7]
+ [  20  128]]
+========================================
+
+========================================
+Data: 2025-03-26 23:35:57
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9817
+Precision: 0.9481
+Recall: 0.8649
+Matriz de Confus�o:
+[[1317    7]
+ [  20  128]]
+========================================
+
+========================================
+Data: 2025-03-26 23:46:07
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9817
+Precision: 0.9481
+Recall: 0.8649
+Matriz de Confus�o:
+[[1317    7]
+ [  20  128]]
+========================================
+
+========================================
+Data: 2025-03-26 23:46:07
+Base: creditcard | Modelo: xgb
+Acur�cia: 0.9817
+Precision: 0.9481
+Recall: 0.8649
+Matriz de Confus�o:
+[[1317    7]
+ [  20  128]]
+========================================
+
+========================================
+Data: 2025-03-26 23:48:54
+Base: creditcard | Modelo: rf
+Acur�cia: 0.9803
+Precision: 0.9542
+Recall: 0.8446
+Matriz de Confus�o:
+[[1318    6]
+ [  23  125]]
+========================================
+
+========================================
+Data: 2025-03-26 23:48:54
+Base: creditcard | Modelo: rf
+Acur�cia: 0.9803
+Precision: 0.9542
+Recall: 0.8446
+Matriz de Confus�o:
+[[1318    6]
+ [  23  125]]
+========================================
+
+========================================
+Data: 2025-03-26 23:50:54
+Base: ieee | Modelo: xgb
+Acur�cia: 0.8475
+Precision: 0.8047
+Recall: 0.6961
+Matriz de Confus�o:
+[[1246  109]
+ [ 196  449]]
+========================================
+
+========================================
+Data: 2025-03-26 23:50:54
+Base: ieee | Modelo: xgb
+Acur�cia: 0.8475
+Precision: 0.8047
+Recall: 0.6961
+Matriz de Confus�o:
+[[1246  109]
+ [ 196  449]]
+========================================
+
+========================================
+Data: 2025-03-26 23:55:53
+Base: ieee | Modelo: rf
+Acur�cia: 0.8265
+Precision: 0.7492
+Recall: 0.6946
+Matriz de Confus�o:
+[[1205  150]
+ [ 197  448]]
+========================================
+
+========================================
+Data: 2025-03-26 23:55:53
+Base: ieee | Modelo: rf
+Acur�cia: 0.8265
+Precision: 0.7492
+Recall: 0.6946
+Matriz de Confus�o:
+[[1205  150]
+ [ 197  448]]
+========================================
